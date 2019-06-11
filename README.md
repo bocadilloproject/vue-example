@@ -22,8 +22,18 @@ npm install
 
 ## Quickstart
 
+To serve the backend server, run:
+
+```bash
+uvicorn server.asgi:app
+```
+
+It will be running at http://localhost:8000.
+
 To serve the frontend app, run `cd frontend` and then:
 
 ```bash
 npm start
 ```
+
+You can access it at http://localhost:8080.
