@@ -5,7 +5,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "vue serve frontend/App.vue"
+    "start": "node_modules/@vue/cli/bin/vue.js serve frontend/App.vue"
   },
   "author": "Florimond Manca",
   "license": "MIT"
