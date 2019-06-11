@@ -22,7 +22,10 @@ Relevant resources:
 
 ## [ ] A: Anonymous URL shortening
 
-TODO
+- [x] Create basic URL form
+- [x] Tie "Submit" button to a `fetch()` call.
+- [x] Implement basic form of the endpoint in backend.
+- [ ] Add CORS
 
 ## [ ] B: Authenticated URL view
 
