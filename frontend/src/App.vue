@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h1>Hello, Vue.js!</h1>
+    <h1>URL Shortener</h1>
+    <h3>Simplify your links</h3>
+    <form>
+      <input type="text" name="url" placeholder="Enter original URL here">
+      <button type="submit">Shorten URL</button>
+    </form>
   </div>
 </template>
 
