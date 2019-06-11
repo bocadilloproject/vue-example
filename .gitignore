@@ -1,0 +1,13 @@
+# Python
+*.pyc
+__pycache__/
+
+# Node
+node_modules/
+
+# IDEs
+.vscode/
+.idea/
+
+# Private stuff
+private/*
