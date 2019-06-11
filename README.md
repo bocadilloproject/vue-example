@@ -6,16 +6,21 @@ This example web app features a [Bocadillo](https://github.com/bocadilloproject/
 
 You will need [Python](https://www.python.org/) 3.6+ and [Node.js](https://nodejs.org/en/).
 
-You can install all dependencies using these two commands:
+- Install server dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install bocadillo
+```
+
+- Install frontend dependencies: run `cd frontend` and then:
+
+```bash
 npm install
 ```
 
 ## Quickstart
 
-To serve the frontend app, move to the `frontend/` directory and then run:
+To serve the frontend app, run `cd frontend` and then:
 
 ```bash
 npm start
