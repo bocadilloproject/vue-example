@@ -1,5 +1,10 @@
-from bocadillo import App
+from bocadillo import App, Request, Response
 
 app = App()
 
-# Create routes here.
+
+@app.route("/urls")
+class Urls:
+    async def post(self, req: Request, res: Response):
+        res.json = {"message": "TODO"}
+        res.status_code = 201
