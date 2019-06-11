@@ -6,10 +6,12 @@ This example web app features a [Bocadillo](https://github.com/bocadilloproject/
 
 You will need [Python](https://www.python.org/) 3.6+ and [Node.js](https://nodejs.org/en/).
 
-- Install server dependencies:
+- Install server dependencies in a virtualenv:
 
 ```bash
-pip install bocadillo
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 - Install frontend dependencies: run `cd frontend` and then:
