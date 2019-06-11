@@ -15,7 +15,7 @@ npm install
 
 ## Quickstart
 
-Serve the frontend app:
+To serve the frontend app, move to the `frontend/` directory and then run:
 
 ```bash
 npm start
