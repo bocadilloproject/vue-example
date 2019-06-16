@@ -9,24 +9,31 @@
     <div v-if="shortUrl">
       <p>Shortened URL:</p>
       <p>
-        <code>{{ shortUrl }}</code>
+        <a :href="shortUrl" rel="noreferrer noopener" alt="Shortened URL">
+          <code>{{ fullShortUrl }}</code>
+        </a>
       </p>
     </div>
   </div>
 </template>
 
 <script>
-import { postJSON, makeFullUrl } from "../utils";
+import { http } from "../utils";
+
 export default {
   data() {
     return { url: "", shortUrl: null };
   },
+  computed: {
+    fullShortUrl() {
+      return window.location.origin + this.shortUrl;
+    }
+  },
   methods: {
-    onSubmit(e) {
+    async onSubmit(e) {
       e.preventDefault();
-      postJSON("/urls", { url: this.url }).then(
-        ({ hash }) => (this.shortUrl = makeFullUrl(`/urls/${hash}`))
-      );
+      const { hash } = await http.post("/urls", { url: this.url });
+      this.shortUrl = `/${hash}`;
     }
   }
 };
