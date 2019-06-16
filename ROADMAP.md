@@ -28,7 +28,8 @@ Relevant resources:
 - [x] Add [CORS](https://bocadilloproject.github.io/guide/builtin-middleware.html#cors).
 - [x] Creation of link hashes: [hashids](https://github.com/davidaurelio/hashids-python).
 - [x] Storage of links: [Bocadillo + orm](https://bocadilloproject.github.io/how-to/orm.html).
-- [ ] Display link hash in frontend
+- [x] Display link hash in frontend
+- [ ] Redirect to original URL when accessing hash
 
 ## [ ] B: Authenticated URL view
 

@@ -1,9 +1,8 @@
-from bocadillo import Request, Response, Router, discover_providers
+from bocadillo import Request, Response, Router
 
 from .models import Link
 
 router = Router()
-discover_providers("server.providerconf")
 
 
 @router.route("/urls", methods=["post"])
