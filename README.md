@@ -40,12 +40,12 @@ However, note that the backend connects to the database via a `DATABASE_URL`, so
 
 You can provide the `DATABASE_URL` via an environment variable, or in a `.env` file located at the project root directory, e.g.:
 
-```dotenv
+```bash
 # PostgreSQL:
-DATABASE_URL=postgresql://localhost:5432/urlshortener
+DATABASE_URL="postgresql://localhost:5432/urlshortener"
 
 # OR, for SQLite:
-DATABASE_URL=sqlite:///sqlite.db
+DATABASE_URL="sqlite:///sqlite.db"
 ```
 
 ## Quickstart
