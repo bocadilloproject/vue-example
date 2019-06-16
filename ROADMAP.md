@@ -25,7 +25,10 @@ Relevant resources:
 - [x] Create basic URL form
 - [x] Tie "Submit" button to a `fetch()` call.
 - [x] Implement basic form of the endpoint in backend.
-- [ ] Add CORS
+- [x] Add [CORS](https://bocadilloproject.github.io/guide/builtin-middleware.html#cors).
+- [x] Creation of link hashes: [hashids](https://github.com/davidaurelio/hashids-python).
+- [x] Storage of links: [Bocadillo + orm](https://bocadilloproject.github.io/how-to/orm.html).
+- [ ] Display link hash in frontend
 
 ## [ ] B: Authenticated URL view
 

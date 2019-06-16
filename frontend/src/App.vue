@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import { postJSON } from "./utils";
 export default {
   data() {
     return { url: "" };
@@ -17,10 +18,7 @@ export default {
   methods: {
     onSubmit(e) {
       e.preventDefault();
-      fetch("http://localhost:8000/urls", {
-        body: { url: this.url },
-        method: "POST"
-      })
+      postJSON("http://localhost:8000/urls", { url: this.url })
         .then(res => res.json())
         .then(console.log);
     }

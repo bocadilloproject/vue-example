@@ -1,1 +1,4 @@
 bocadillo
+hashids
+orm
+databases[postgresql]
