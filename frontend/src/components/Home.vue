@@ -12,8 +12,6 @@ import Result from "./Result";
 
 export default {
   components: { Hero, Form, Result },
-  data() {
-    return { url: "", hash: null };
-  }
+  data: () => ({ url: "", hash: null })
 };
 </script>

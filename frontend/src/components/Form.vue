@@ -19,8 +19,10 @@
 import { http } from "../utils";
 
 export default {
-  data() {
-    return { url: "" };
+  inject: ["heroOptions"],
+  data: () => ({ url: "" }),
+  mounted() {
+    this.heroOptions.isSuccess = false;
   },
   methods: {
     async onSubmit(e) {
