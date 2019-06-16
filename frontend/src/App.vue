@@ -6,6 +6,9 @@
       <input v-model="url" type="text" name="url" placeholder="Enter original URL here" required>
       <button type="submit">Shorten URL</button>
     </form>
+    <div v-if="hash">
+      <p>Shortened URL:</p>
+    </div>
   </div>
 </template>
 
@@ -13,14 +16,14 @@
 import { postJSON } from "./utils";
 export default {
   data() {
-    return { url: "" };
+    return { url: "", shortUrl: null };
   },
   methods: {
     onSubmit(e) {
       e.preventDefault();
       postJSON("http://localhost:8000/urls", { url: this.url })
         .then(res => res.json())
-        .then(console.log);
+        .then(({ short_url: shortUrl }) => (this.shortUrl = shortUrl));
     }
   }
 };
