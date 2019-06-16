@@ -10,3 +10,7 @@ venv/
 # Private stuff
 debug/
 .env
+
+# SQLite
+*.db
+*.sqlite

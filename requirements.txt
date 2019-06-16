@@ -1,4 +1,4 @@
 bocadillo
 hashids
 orm
-databases[postgresql]
+databases[postgresql,sqlite]
